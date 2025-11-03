@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Privacy Policy – LLDK App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <style>
+    :root { --card:#ffffff; --ink:#0b1220; --muted:#475569; --accent:#2563eb }
+    html,body{margin:0;padding:0;background:#f6f7fb;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink)}
+    .wrap{max-width:900px;margin:40px auto;padding:0 16px}
+    .card{background:var(--card);border-radius:16px;box-shadow:0 10px 30px rgba(2,8,23,.06);padding:28px}
+    h1{font-size:28px;margin:0 0 8px}
+    .tag{display:inline-block;background:#eaf2ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-size:12px;margin-bottom:18px}
+    h2{margin:28px 0 10px;font-size:20px}
+    p,li{line-height:1.65}
+    code{background:#f3f4f6;padding:2px 6px;border-radius:6px}
+    a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+    .muted{color:var(--muted)} .footer{font-size:13px;color:var(--muted);margin-top:28px}
+    @media (prefers-color-scheme: dark){
+      body{background:#0b1020;color:#e5e7eb}.card{background:#0f172a}
+      .muted,.footer{color:#94a3b8} a{color:#60a5fa} code{background:#0b1220}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="tag">Last updated: <span id="d"></span></div>
+      <h1>Privacy Policy – LLDK App</h1>
+      <p><strong>Lycée Libanais de Kinshasa (LLDK)</strong> (“we”, “our”) publishes the mobile app <strong>LLDK App</strong> for students and teachers.</p>
+
+      <h2>What the app does</h2>
+      <p>The app securely signs in to the school website <code>csarabe.com</code> over HTTPS to view and manage agenda items that you are authorized to access. The app does not contain ads and does not sell data.</p>
+
+      <h2>Data we process</h2>
+      <ul>
+        <li><strong>Login credentials</strong> you enter are sent only to <code>csarabe.com</code> to authenticate you. The app does not store your password.</li>
+        <li><strong>Session cookies/tokens</strong> from <code>csarabe.com</code> are stored locally on your device to keep you signed in.</li>
+        <li><strong>Optional “Cheat Reports” (teacher module)</strong>: if enabled by a teacher, the app may store minimal event records (student name, class/section, reason, timestamp, device ID) in our Supabase project for the teacher dashboard. No advertising identifiers are used.</li>
+        <li><strong>Crash/Logs</strong>: Only basic error messages inside the app UI to help troubleshooting. No third-party analytics SDKs.</li>
+      </ul>
+
+      <h2>How we use the data</h2>
+      <ul>
+        <li>To sign you in and show your own agenda/permissions from <code>csarabe.com</code>.</li>
+        <li>To allow authorized teachers to add/update agenda entries.</li>
+        <li>To let authorized staff review “Cheat Reports” where that feature is used.</li>
+      </ul>
+
+      <h2>Sharing</h2>
+      <ul>
+        <li><code>csarabe.com</code> receives your credentials and session for authentication and agenda operations.</li>
+        <li><strong>Supabase</strong> receives “Cheat Reports” only when that feature is used. Access is limited to authorized school staff.</li>
+        <li>No data is shared with advertisers.</li>
+      </ul>
+
+      <h2>Retention</h2>
+      <ul>
+        <li>Website sessions remain on your device until you sign out or the session expires.</li>
+        <li>“Cheat Reports” (if used) are retained per school policy and can be deleted upon authorized request.</li>
+      </ul>
+
+      <h2>Security</h2>
+      <ul>
+        <li>All traffic uses HTTPS.</li>
+        <li>Credentials are sent only to <code>csarabe.com</code>.</li>
+        <li>Please protect your device with a passcode/biometrics.</li>
+      </ul>
+
+      <h2>Children</h2>
+      <p>The app is a school utility under school/parent oversight. Accounts are provisioned by the school.</p>
+
+      <h2>Your choices</h2>
+      <ul>
+        <li>Sign out at any time (clears session cookies).</li>
+        <li>For agenda data corrections/deletions hosted on <code>csarabe.com</code>, contact the school administration.</li>
+        <li>For “Cheat Reports”, an authorized staff member can request deletion.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:privacy@lyceelib.it.com">mohamad.hssaykigmail.com@</a></p>
+
+      <h2>French / Arabic summaries</h2>
+      <p class="muted">FR: L’app se connecte à <code>csarabe.com</code> pour afficher/mettre à jour l’agenda. Mot de passe non stocké. Cookies locaux. Aucune publicité. Le module “Cheat Reports” (facultatif) enregistre des événements sur Supabase, accessibles au personnel autorisé.</p>
+      <p class="muted">AR: يتصل التطبيق بموقع <code>csarabe.com</code> لعرض/تحديث الأجندة. لا يُخزَّن كلمة المرور. ملفات الجلسة محليًا. لا إعلانات. ميزة “تقارير الغش” (اختيارية) تسجّل أحداثًا في Supabase ويصل إليها الطاقم المصرّح له فقط.</p>
+
+      <div class="footer">© <span id="y"></span> Lycée Libanais de Kinshasa (LLDK). All rights reserved.</div>
+    </div>
+  </div>
+  <script>
+    const d=new Date();document.getElementById('d').textContent=d.toLocaleDateString();document.getElementById('y').textContent=d.getFullYear();
+  </script>
+</body>
+</html>
